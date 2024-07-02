@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on click events</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body onload="onLoad()">
+    <div class="container">
+    <div>
+        <img class="image" src="https://i.guim.co.uk/img/media/8d904ba5091c05f48cd173406dfa974244e27732/93_193_4090_2454/master/4090.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=79ed523100f04fcd49351d3fdaa82251"
+         onmouseover="Onmouseover()" onmouseout="Onmouseout()" onmousemove="Onmousemove()"/>
+         <span class="image-text"> MOUSE EVENTS</span>
+    </div>
+
+    <input class="input-box"  type="text" placeholder="Enter your star name here!" onkeypress="keypressed()" onkeyup="keyup()" onkeydown="keydown()" onchange="changes()"/>
+
+    <button class="btn1" onclick="button1()">CLICK ONCE</button>
+    <button class="btn2" ondblclick="button2()">CLICK TWICE</button>
+    </div>
+   
+    
+   <script>
+    function Onmouseover(){
+        console.log(`you got stars`);
+    }
+    function Onmouseout(){
+        console.log(`you are out of stars`);
+    }
+    function Onmousemove(){
+        console.log(`you are gazing in the stars`);
+    }
+    function keypressed(){
+        console.log(`key is pressed`);
+    }
+    function keyup(){
+        console.log(`key is up`);
+    }
+    function keydown(){
+        console.log(`key is down`);
+    }
+    function button1(){
+        alert("processing your information");
+    }
+    function button2(){
+        document.write(`you are an aries`);
+    }
+    function onLoad(){
+       console.log("page is loaded");
+    }
+    function changes(){
+        console.log("chnages have occured");
+    }
+
+   </script> 
+</body>
+</html>
